@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>JS交互</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <script type="text/javascript">
+    function promptTest(param){
+    	prompt(param);
+    }
+  </script>
+</head>
+<body>
+  <p id="content"></p>
+  <p>
+  <input type="button" value="调用Java方法" onclick="window.stub.jsMethod('传统方式的参数');" /><br />
+  <hr />
+  <input type="button" value="prompt方式" onclick="promptTest('prompt方式的参数')" /><br />
+  <hr />
+  <a href="http://www.xxx.com">链接方式</a>
+  </p>
+</body>
+</html>
